@@ -12,7 +12,11 @@
     "icon": "assets/vehicles/jet.svg"
   },
   "tank": {
-    "name": "Tank",
+    "name": "Big Boom Tank",
     "icon": "assets/vehicles/tank.svg"
+  },
+  "infantry-destroyer": {
+    "name": "Infantry Destroyer Tank",
+    "icon": "assets/vehicles/infantry-destroyer.svg"
   }
 }

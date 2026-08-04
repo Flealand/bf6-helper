@@ -36,6 +36,10 @@ html {
   color-scheme: dark;
 }
 
+a:visited {
+  color: inherit;
+}
+
 body {
   min-height: 100vh;
   background:
@@ -205,6 +209,7 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: var(--bf-text);
 }
 
 .tile__desc {
@@ -340,6 +345,7 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: 1.15;
+  color: var(--bf-text);
 }
 
 .map-tile__attacker {

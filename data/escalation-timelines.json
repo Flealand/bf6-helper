@@ -12,5 +12,15 @@
       { "vehicle": "attack-heli", "time": "19:00" },
       { "vehicle": "little-bird", "time": "19:00" }
     ]
+  },
+  "contaminated": {
+    "duration": "22:00",
+    "events": [
+      { "vehicle": "infantry-destroyer", "time": "03:00" },
+      { "vehicle": "tank", "time": "06:30" },
+      { "vehicle": "attack-heli", "time": "09:00" },
+      { "vehicle": "infantry-destroyer", "time": "13:30" },
+      { "vehicle": "tank", "time": "18:00" }
+    ]
   }
 }
