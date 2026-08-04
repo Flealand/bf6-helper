@@ -74,8 +74,8 @@
   {
     "id": "tsuru-reef",
     "name": "Tsuru Reef",
-    "attacker": null,
-    "defender": null
+    "attacker": "PAX",
+    "defender": "NATO"
   },
   {
     "id": "wake-island",
