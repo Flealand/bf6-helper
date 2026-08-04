@@ -18,5 +18,9 @@
   "infantry-destroyer": {
     "name": "Infantry Destroyer Tank",
     "icon": "assets/vehicles/infantry-destroyer.svg"
+  },
+  "bomber-jet": {
+    "name": "Bomber Jet",
+    "icon": "assets/vehicles/bomber-jet.svg"
   }
 }
