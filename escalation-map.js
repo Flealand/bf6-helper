@@ -129,6 +129,36 @@ function pause() {
   el.toggleBtn.textContent = "Play";
 }
 
+function adjustTime(delta) {
+  const current = computeElapsed();
+  const target = Math.max(0, Math.min(duration, current + delta));
+
+  if (target > current) {
+    checkEvents(current, target);
+  } else if (target < current) {
+    events.forEach((ev) => {
+      const warnAt = Math.max(0, ev.time - 30);
+      if (ev.time > target) {
+        ev.spawned = false;
+        if (ev.rowEl) ev.rowEl.classList.remove("is-done");
+      }
+      if (warnAt > target) {
+        ev.warned = false;
+      }
+    });
+  }
+
+  elapsed = target;
+  if (running) {
+    startTs = Date.now() - elapsed * 1000;
+  }
+  updateClockDisplay();
+
+  if (elapsed >= duration && running) {
+    pause();
+  }
+}
+
 function resetState() {
   clearInterval(intervalId);
   running = false;
@@ -225,6 +255,8 @@ async function init() {
   el.durationLabel = document.getElementById("timer-duration");
   el.toggleBtn = document.getElementById("timer-toggle");
   el.resetBtn = document.getElementById("timer-reset");
+  el.minus10Btn = document.getElementById("timer-minus10");
+  el.plus10Btn = document.getElementById("timer-plus10");
   el.overlay = document.getElementById("spawn-overlay");
   el.overlayIcon = document.getElementById("spawn-overlay-icon");
   el.overlayVehicle = document.getElementById("spawn-overlay-vehicle");
@@ -280,6 +312,9 @@ async function init() {
     resetState();
     updateClockDisplay();
   });
+
+  el.minus10Btn.addEventListener("click", () => adjustTime(-10));
+  el.plus10Btn.addEventListener("click", () => adjustTime(10));
 }
 
 init();

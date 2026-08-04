@@ -709,7 +709,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 28px;
+  gap: 16px;
   padding: 14px 28px;
   background: linear-gradient(90deg, var(--bf-panel-alt) 0%, var(--bf-black) 100%);
   border-bottom: 2px solid var(--bf-orange);
@@ -745,6 +745,11 @@ main {
   color: var(--bf-text);
   border-color: var(--bf-text-dim);
   background: transparent;
+}
+
+.timer-btn--skip {
+  padding: 10px 16px;
+  font-size: 1.05rem;
 }
 
 .timer-display {
@@ -874,6 +879,11 @@ main {
     flex-shrink: 0;
     padding: 5px 10px;
     font-size: 0.78rem;
+  }
+
+  .timer-btn--skip {
+    padding: 5px 8px;
+    font-size: 0.72rem;
   }
 
   .timer-display {
