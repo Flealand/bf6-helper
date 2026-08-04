@@ -445,6 +445,8 @@ main {
 .mp-timeline-wrap {
   flex: 1 1 auto;
   min-height: 0;
+  margin: 0;
+  max-width: none;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -453,31 +455,45 @@ main {
 
 .timeline {
   position: relative;
-  width: min(760px, 100%);
-  height: 100%;
+  align-self: stretch;
+  display: flex;
+  width: min(820px, 100%);
 }
 
 .timeline__track {
-  position: absolute;
-  left: 89px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--bf-border-bright);
+  flex: 0 0 3px;
+  align-self: stretch;
+  margin-left: 65px;
+  background: rgba(238, 241, 242, 0.45);
+  box-shadow: 0 0 6px rgba(238, 241, 242, 0.15);
 }
 
-.timeline__grid-line {
+.timeline__tick {
+  position: absolute;
+  left: 60px;
+  width: 13px;
+  height: 3px;
+  background: var(--bf-text-dim);
+  transform: translateY(-50%);
+}
+
+.timeline__tick-label {
   position: absolute;
   left: 0;
-  right: 0;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.06);
+  width: 54px;
+  white-space: nowrap;
+  text-align: right;
+  transform: translateY(-50%);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--bf-text-dim);
 }
 
 .timeline__now {
   position: absolute;
   left: 0;
-  right: 0;
+  width: 100%;
   height: 2px;
   top: 0;
   background: var(--bf-cyan);
@@ -499,43 +515,36 @@ main {
 .timeline__point {
   position: absolute;
   left: 0;
-  right: 0;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 48px 12px 64px 1fr;
   align-items: center;
+  column-gap: 12px;
   transform: translateY(-50%);
-}
-
-.timeline__point-time {
-  flex: 0 0 70px;
-  margin-right: 14px;
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-  font-size: 0.8rem;
-  color: var(--bf-text-dim);
 }
 
 .timeline__point-dot {
   width: 10px;
   height: 10px;
-  flex-shrink: 0;
+  justify-self: center;
   border-radius: 50%;
   background: var(--bf-orange);
   border: 2px solid var(--bf-bg);
   z-index: 2;
 }
 
-.timeline__point-branch {
-  width: 20px;
-  height: 2px;
-  flex-shrink: 0;
-  background: var(--bf-border-bright);
+.timeline__point-time {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--bf-orange-bright);
 }
 
 .timeline__point-icons {
   display: flex;
   align-items: flex-start;
   gap: 18px;
-  margin-left: 12px;
 }
 
 .timeline__point-icon-wrap {
@@ -575,7 +584,7 @@ main {
   position: absolute;
   top: 50%;
   left: 0;
-  right: 0;
+  width: 100%;
   transform: translateY(-50%);
   text-align: center;
   color: var(--bf-text-dim);

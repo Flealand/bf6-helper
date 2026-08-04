@@ -15,7 +15,7 @@ function formatTime(totalSeconds) {
   return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
 
-let duration = 1800;
+let duration = 1320;
 let events = [];
 let elapsed = 0;
 let running = false;
@@ -152,10 +152,17 @@ function renderTimeline() {
 
   for (let t = 0; t <= duration; t += 300) {
     const pct = (t / duration) * 100;
-    const line = document.createElement("div");
-    line.className = "timeline__grid-line";
-    line.style.top = `${pct}%`;
-    el.timeline.appendChild(line);
+
+    const tick = document.createElement("div");
+    tick.className = "timeline__tick";
+    tick.style.top = `${pct}%`;
+    el.timeline.appendChild(tick);
+
+    const label = document.createElement("div");
+    label.className = "timeline__tick-label";
+    label.style.top = `${pct}%`;
+    label.textContent = formatTime(t);
+    el.timeline.appendChild(label);
   }
 
   const now = document.createElement("div");
@@ -189,9 +196,9 @@ function renderTimeline() {
         .join("");
 
       point.innerHTML = `
-        <span class="timeline__point-time">${formatTime(time)}</span>
+        <span></span>
         <span class="timeline__point-dot"></span>
-        <span class="timeline__point-branch"></span>
+        <span class="timeline__point-time">${formatTime(time)}</span>
         <span class="timeline__point-icons">${iconsHtml}</span>
       `;
 
@@ -251,7 +258,7 @@ async function init() {
         .filter((e) => e.vehicle)
         .sort((a, b) => a.time - b.time);
     } else {
-      duration = 1800;
+      duration = 1320;
       events = [];
     }
   } catch (err) {
