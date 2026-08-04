@@ -8,6 +8,7 @@ function renderMapTile(map) {
   const tile = document.createElement("a");
   tile.className = "map-tile map-tile--link";
   tile.href = `escalation-map.html?map=${encodeURIComponent(map.id)}`;
+  tile.style.setProperty("--map-bg", `url('assets/maps/${map.id}.jpg')`);
 
   tile.innerHTML = `
     <div class="map-tile__name">${map.name}</div>
