@@ -11,8 +11,9 @@ function renderMapTile(map, factions) {
     ? `<img class="map-tile__flag" src="${attacker.flag}" alt="${attacker.name}" />`
     : `<span class="map-tile__flag map-tile__flag--tbd">TBD</span>`;
 
-  const tile = document.createElement("div");
-  tile.className = "map-tile";
+  const tile = document.createElement("a");
+  tile.className = "map-tile map-tile--link";
+  tile.href = `breakthrough-map.html?map=${encodeURIComponent(map.id)}`;
 
   tile.innerHTML = `
     <div class="map-tile__name">${map.name}</div>

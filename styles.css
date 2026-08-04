@@ -591,6 +591,90 @@ main {
   font-size: 0.95rem;
 }
 
+.bt-sections {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bt-section {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--bf-border);
+  border-left: 4px solid var(--bf-orange);
+}
+
+.bt-section:last-child {
+  border-bottom: none;
+}
+
+.bt-section--start {
+  background: rgba(255, 122, 0, 0.06);
+  border-left-color: var(--bf-cyan);
+}
+
+.bt-section__label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--bf-text-dim);
+}
+
+.bt-section__value {
+  font-family: "Teko", "Rajdhani", "Bahnschrift", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--bf-text);
+}
+
+.bt-section__value--bonus {
+  color: var(--bf-orange);
+}
+
+.bt-factions {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 18px;
+}
+
+.bt-factions__side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bt-factions__label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--bf-text-dim);
+}
+
+.bt-factions__flag {
+  display: block;
+  width: auto;
+}
+
+.bt-factions__flag--tbd {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px dashed var(--bf-border-bright);
+  color: var(--bf-text-faint);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .mp-timer-bar {
   flex: 0 0 auto;
   display: flex;

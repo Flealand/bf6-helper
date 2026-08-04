@@ -1,0 +1,11 @@
+{
+  "cairo-bazaar": {
+    "startingTickets": 150,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 75 },
+      { "stage": 4, "tickets": 100 },
+      { "stage": 5, "tickets": 125 }
+    ]
+  }
+}
