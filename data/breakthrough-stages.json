@@ -81,5 +81,12 @@
       { "stage": 2, "tickets": 50 },
       { "stage": 3, "tickets": 50 }
     ]
+  },
+  "operation-firestorm": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 }
+    ]
   }
 }
