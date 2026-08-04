@@ -20,38 +20,32 @@
   {
     "id": "empire-state",
     "name": "Empire State",
-    "attacker": null,
-    "defender": null
-  },
-  {
-    "id": "iberian-offensive",
-    "name": "Iberian Offensive",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "mirak-valley",
     "name": "Mirak Valley",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "new-sobek-city",
     "name": "New Sobek City",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "operation-firestorm",
     "name": "Operation Firestorm",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "blackwell-fields",
     "name": "Blackwell Fields",
-    "attacker": null,
-    "defender": null
+    "attacker": "PAX",
+    "defender": "NATO"
   },
   {
     "id": "eastwood",
@@ -62,14 +56,14 @@
   {
     "id": "contaminated",
     "name": "Contaminated",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "hagental-base",
     "name": "Hagental Base",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "railway-to-golmud",
