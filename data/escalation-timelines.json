@@ -17,5 +17,19 @@
       { "vehicle": "infantry-destroyer", "time": "13:30" },
       { "vehicle": "tank", "time": "18:00" }
     ]
+  },
+  "railway-to-golmud": {
+    "duration": "22:00",
+    "events": [
+      { "vehicle": "cyber-truck", "time": "04:30" },
+      { "vehicle": "infantry-destroyer", "time": "04:30" },
+      { "vehicle": "little-bird", "time": "06:00" },
+      { "vehicle": "tank", "time": "07:30" },
+      { "vehicle": "tank", "time": "07:30" },
+      { "vehicle": "attack-heli", "time": "12:00" },
+      { "vehicle": "jet", "time": "13:30" },
+      { "vehicle": "bomber-jet", "time": "18:00" },
+      { "vehicle": "tank", "time": "19:30" }
+    ]
   }
 }

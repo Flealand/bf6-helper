@@ -22,5 +22,9 @@
   "bomber-jet": {
     "name": "Bomber Jet",
     "icon": "assets/vehicles/bomber-jet.svg"
+  },
+  "cyber-truck": {
+    "name": "Cyber Truck",
+    "icon": "assets/vehicles/cyber-truck.svg"
   }
 }
