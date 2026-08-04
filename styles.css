@@ -95,6 +95,16 @@ body {
   color: var(--bf-orange);
 }
 
+.top-banner__title a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 120ms ease;
+}
+
+.top-banner__title a:hover {
+  opacity: 0.8;
+}
+
 .top-banner__sub {
   margin-left: auto;
   font-size: 0.78rem;
@@ -442,6 +452,16 @@ main {
   color: var(--bf-text-faint);
 }
 
+.mp-header__wordmark a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 120ms ease;
+}
+
+.mp-header__wordmark a:hover {
+  color: var(--bf-orange-bright);
+}
+
 .mp-timeline-wrap {
   flex: 1 1 auto;
   min-height: 0;
@@ -550,7 +570,7 @@ main {
 .timeline__point-icon-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 4px;
   transition: opacity 200ms ease;
 }
