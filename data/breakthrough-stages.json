@@ -74,5 +74,12 @@
       { "stage": 3, "tickets": 50 },
       { "stage": 4, "tickets": 50 }
     ]
+  },
+  "eastwood": {
+    "startingTickets": 250,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 }
+    ]
   }
 }

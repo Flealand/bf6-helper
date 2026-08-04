@@ -50,8 +50,8 @@
   {
     "id": "eastwood",
     "name": "Eastwood",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "contaminated",
