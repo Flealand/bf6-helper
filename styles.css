@@ -624,6 +624,7 @@ main {
 .bt-section {
   flex: 1 1 0;
   min-height: 0;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -813,3 +814,99 @@ main {
 .spawn-overlay--spawned .spawn-overlay__status {
   color: var(--bf-cyan);
 }
+
+/* ------------------------------------------------------------- mobile */
+
+@media (max-width: 600px) {
+  .mp-header {
+    gap: 10px;
+    padding: 8px 14px;
+  }
+
+  .mp-header__title {
+    font-size: 1.1rem;
+  }
+
+  .mp-header__wordmark {
+    display: none;
+  }
+
+  .bt-factions {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mp-timer-bar {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .timer-btn {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+
+  .timer-display {
+    order: -1;
+    flex: 1 0 100%;
+    min-width: 0;
+    font-size: 1.3rem;
+  }
+
+  .timer-display__total {
+    font-size: 0.85rem;
+  }
+
+  .timeline__track {
+    margin-left: 34px;
+  }
+
+  .timeline__tick {
+    left: 29px;
+    width: 9px;
+  }
+
+  .timeline__tick-label {
+    width: 26px;
+    font-size: 0.6rem;
+  }
+
+  .timeline__point {
+    grid-template-columns: 26px 10px 48px 1fr;
+    column-gap: 6px;
+  }
+
+  .timeline__point-time {
+    font-size: 0.7rem;
+  }
+
+  .timeline__point-icons {
+    gap: 10px;
+  }
+
+  .timeline__point-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .timeline__point-icon-label {
+    font-size: 0.52rem;
+  }
+
+  .spawn-overlay__icon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .spawn-overlay__vehicle {
+    font-size: 2.6rem;
+  }
+
+  .spawn-overlay__status {
+    font-size: 1.1rem;
+  }
+}
+

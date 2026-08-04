@@ -60,6 +60,15 @@ function renderSections(data, map, factions) {
   wrap.querySelectorAll(".bt-factions__label").forEach((el) => {
     el.style.fontSize = `${Math.max(11, labelSize * 0.85)}px`;
   });
+
+  const maxWidth = wrap.clientWidth - 32;
+  wrap.querySelectorAll(".bt-section__value").forEach((el) => {
+    let size = parseFloat(el.style.fontSize);
+    while (el.scrollWidth > maxWidth && size > 14) {
+      size -= 1;
+      el.style.fontSize = `${size}px`;
+    }
+  });
 }
 
 async function init() {
