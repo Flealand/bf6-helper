@@ -1,11 +1,62 @@
 {
   "cairo-bazaar": {
-    "startingTickets": 150,
+    "startingTickets": 225,
     "stages": [
       { "stage": 2, "tickets": 50 },
-      { "stage": 3, "tickets": 75 },
-      { "stage": 4, "tickets": 100 },
-      { "stage": 5, "tickets": 125 }
+      { "stage": 3, "tickets": 50 }
+    ]
+  },
+  "siege-of-cairo": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 },
+      { "stage": 4, "tickets": 50 }
+    ]
+  },
+  "liberation-peak": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 },
+      { "stage": 4, "tickets": 50 },
+      { "stage": 5, "tickets": 50 }
+    ]
+  },
+  "empire-state": {
+    "startingTickets": 275,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 }
+    ]
+  },
+  "mirak-valley": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 }
+    ]
+  },
+  "new-sobek-city": {
+    "startingTickets": 275,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 }
+    ]
+  },
+  "blackwell-fields": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 }
+    ]
+  },
+  "contaminated": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 },
+      { "stage": 4, "tickets": 50 }
     ]
   }
 }
