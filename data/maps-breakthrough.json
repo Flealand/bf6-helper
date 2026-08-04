@@ -68,8 +68,8 @@
   {
     "id": "railway-to-golmud",
     "name": "Railway to Golmud",
-    "attacker": null,
-    "defender": null
+    "attacker": "NATO",
+    "defender": "PAX"
   },
   {
     "id": "tsuru-reef",

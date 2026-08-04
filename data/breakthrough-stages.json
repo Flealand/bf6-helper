@@ -66,5 +66,13 @@
       { "stage": 3, "tickets": 50 },
       { "stage": 4, "tickets": 50 }
     ]
+  },
+  "railway-to-golmud": {
+    "startingTickets": 200,
+    "stages": [
+      { "stage": 2, "tickets": 50 },
+      { "stage": 3, "tickets": 50 },
+      { "stage": 4, "tickets": 50 }
+    ]
   }
 }
