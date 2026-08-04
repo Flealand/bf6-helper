@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escalation Timeline — BF 6 Helper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Teko:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="no-scroll-page">
+  <header class="mp-header">
+    <a class="mp-header__back back-link" href="escalation.html">Back</a>
+    <h1 class="mp-header__title" id="mp-title">Loading…</h1>
+    <span class="mp-header__wordmark">BF 6 Helper &middot; Escalation</span>
+  </header>
+
+  <main class="mp-timeline-wrap">
+    <div class="timeline" id="timeline"></div>
+  </main>
+
+  <footer class="mp-timer-bar">
+    <button class="timer-btn timer-btn--secondary" id="timer-reset" type="button">Reset</button>
+    <div class="timer-display">
+      <span id="timer-elapsed">00:00</span>
+      <span class="timer-display__total">/ <span id="timer-duration">30:00</span></span>
+    </div>
+    <button class="timer-btn" id="timer-toggle" type="button">Play</button>
+  </footer>
+
+  <div class="spawn-overlay" id="spawn-overlay">
+    <div class="spawn-overlay__inner">
+      <span class="spawn-overlay__icon" id="spawn-overlay-icon"></span>
+      <div class="spawn-overlay__vehicle" id="spawn-overlay-vehicle"></div>
+      <div class="spawn-overlay__status" id="spawn-overlay-status"></div>
+    </div>
+  </div>
+
+  <script src="escalation-map.js"></script>
+</body>
+</html>

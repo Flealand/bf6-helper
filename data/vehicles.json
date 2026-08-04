@@ -1,0 +1,18 @@
+{
+  "attack-heli": {
+    "name": "Attack Heli",
+    "icon": "assets/vehicles/attack-heli.svg"
+  },
+  "little-bird": {
+    "name": "Little Bird",
+    "icon": "assets/vehicles/little-bird.svg"
+  },
+  "jet": {
+    "name": "Jet",
+    "icon": "assets/vehicles/jet.svg"
+  },
+  "tank": {
+    "name": "Tank",
+    "icon": "assets/vehicles/tank.svg"
+  }
+}

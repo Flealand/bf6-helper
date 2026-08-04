@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cairo-bazaar",
+    "name": "Cairo Bazaar",
+    "attacker": "PAX",
+    "defender": "NATO"
+  },
+  {
+    "id": "siege-of-cairo",
+    "name": "Siege of Cairo",
+    "attacker": "PAX",
+    "defender": "NATO"
+  },
+  {
+    "id": "liberation-peak",
+    "name": "Liberation Peak",
+    "attacker": "NATO",
+    "defender": "PAX"
+  },
+  {
+    "id": "empire-state",
+    "name": "Empire State",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "iberian-offensive",
+    "name": "Iberian Offensive",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "mirak-valley",
+    "name": "Mirak Valley",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "new-sobek-city",
+    "name": "New Sobek City",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "operation-firestorm",
+    "name": "Operation Firestorm",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "blackwell-fields",
+    "name": "Blackwell Fields",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "eastwood",
+    "name": "Eastwood",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "contaminated",
+    "name": "Contaminated",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "hagental-base",
+    "name": "Hagental Base",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "railway-to-golmud",
+    "name": "Railway to Golmud",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "tsuru-reef",
+    "name": "Tsuru Reef",
+    "attacker": null,
+    "defender": null
+  },
+  {
+    "id": "wake-island",
+    "name": "Wake Island",
+    "attacker": null,
+    "defender": null
+  }
+]

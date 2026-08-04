@@ -1,0 +1,10 @@
+{
+  "PAX": {
+    "name": "PAX Armata",
+    "flag": "assets/factions/pax.png"
+  },
+  "NATO": {
+    "name": "NATO",
+    "flag": "assets/factions/nato.webp"
+  }
+}
