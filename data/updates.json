@@ -1,0 +1,33 @@
+[
+  {
+    "version": "1.4.1.5",
+    "date": "2026-08-04",
+    "title": "Quality-of-Life Patch",
+    "summary": "A quality-of-life patch addressing issues across deployment, aiming, vehicles, challenges, maps, Portal, UI, audio, and stability, improving reliability for both Multiplayer and REDSEC.",
+    "highlights": [
+      "Improved ADS transitions with Sniper Rifles while suppressed for non-Recon classes",
+      "Soldier models and UI now appear more quickly after deploying",
+      "Fixed Main Battle Tank Canister Shells incorrectly switching to Aim-Guided Shells during reload",
+      "Corrected player spawn positioning during PAX insertion on Tsuru Reef Breakthrough",
+      "Resolved PC driver crashes on some NVIDIA cards when changing attachments or on water-heavy maps",
+      "Console players can now like Portal experiences",
+      "Supply Crates in Portal Battle Royale stay synced after a crash/rejoin",
+      "Tanks in Battle Royale no longer remain stunned when entered right after sabotage ends"
+    ]
+  },
+  {
+    "version": "1.4.1.0",
+    "date": "2026-07-21",
+    "title": "Season 4: Pacific Front",
+    "summary": "Season 4 brings naval warfare to Battlefield 6 with amphibious combat across land, sea, and air, headlined by the new Tsuru Reef map and a dynamic wave system.",
+    "highlights": [
+      "New map: Tsuru Reef, a sprawling Pacific archipelago with combined land/naval/air combat",
+      "New vehicles: RCB-90 Patrol Boat and 7.7m NSW RHIB transport boat",
+      "New weapons: BROD 3 carbine, EF88 bullpup assault rifle, VSSM suppressed DMR",
+      "Swimming overhaul: reworked animations/physics, in-water drag & revive, better squad spawn handling",
+      "Ranked Battle Royale added to REDSEC with a competitive leaderboard and permanent rewards",
+      "Bot AI improvements for swimming, boat navigation, and shallow water crossings",
+      "M320A1 balance changes: reduced grenadier ammo bonus and cluster damage/radius in competitive modes"
+    ]
+  }
+]

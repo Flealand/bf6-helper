@@ -138,6 +138,10 @@ main {
   color: var(--bf-text-dim);
 }
 
+.tile-grid + .section-label {
+  margin-top: 36px;
+}
+
 .section-label::before {
   content: "";
   width: 22px;
@@ -391,6 +395,100 @@ main {
 
 .data-error {
   color: var(--bf-danger);
+}
+
+/* ------------------------------------------------------------- updates */
+
+.update-section {
+  padding: 6px 32px 64px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.update-log {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.update-entry {
+  background: linear-gradient(155deg, var(--bf-panel-alt) 0%, var(--bf-panel) 100%);
+  border: 1px solid var(--bf-border);
+  border-left: 3px solid var(--bf-orange);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 18px),
+    calc(100% - 18px) 100%,
+    0 100%
+  );
+  padding: 22px 26px;
+}
+
+.update-entry__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.update-entry__version {
+  font-family: "Teko", "Rajdhani", "Bahnschrift", "Segoe UI", Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--bf-orange);
+  background: rgba(255, 122, 0, 0.12);
+  padding: 3px 10px;
+}
+
+.update-entry__date {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--bf-text-faint);
+}
+
+.update-entry__title {
+  font-family: "Teko", "Rajdhani", "Bahnschrift", "Segoe UI", Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  color: var(--bf-text);
+}
+
+.update-entry__summary {
+  color: var(--bf-text-dim);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.update-entry__highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.update-entry__highlights li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: var(--bf-text);
+  line-height: 1.4;
+}
+
+.update-entry__highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 2px;
+  background: var(--bf-cyan);
 }
 
 .map-tile--link {
