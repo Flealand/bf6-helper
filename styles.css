@@ -660,6 +660,7 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
+  white-space: nowrap;
   color: var(--bf-text);
 }
 
@@ -711,7 +712,7 @@ main {
   gap: 28px;
   padding: 14px 28px;
   background: linear-gradient(90deg, var(--bf-panel-alt) 0%, var(--bf-black) 100%);
-  border-top: 2px solid var(--bf-orange);
+  border-bottom: 2px solid var(--bf-orange);
 }
 
 .timer-btn {
@@ -842,6 +843,26 @@ main {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .bt-section {
+    padding: 0 10px;
+  }
+
+  .bt-section__label {
+    font-size: 0.65rem !important;
+  }
+
+  .bt-section__value {
+    font-size: clamp(1.2rem, 7.5vw, 2.3rem) !important;
+  }
+
+  .bt-factions__label {
+    font-size: 0.6rem !important;
+  }
+
+  .bt-factions__flag {
+    height: 22px !important;
   }
 
   .mp-timer-bar {

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Teko:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body class="no-scroll-page">
   <header class="mp-header">
@@ -16,18 +16,18 @@
     <span class="mp-header__wordmark"><a href="index.html">BF 6 Helper</a> &middot; Escalation</span>
   </header>
 
-  <main class="mp-timeline-wrap">
-    <div class="timeline" id="timeline"></div>
-  </main>
-
-  <footer class="mp-timer-bar">
+  <div class="mp-timer-bar">
     <button class="timer-btn timer-btn--secondary" id="timer-reset" type="button">Reset</button>
     <div class="timer-display">
       <span id="timer-elapsed">00:00</span>
       <span class="timer-display__total">/ <span id="timer-duration">22:00</span></span>
     </div>
     <button class="timer-btn" id="timer-toggle" type="button">Play</button>
-  </footer>
+  </div>
+
+  <main class="mp-timeline-wrap">
+    <div class="timeline" id="timeline"></div>
+  </main>
 
   <div class="spawn-overlay" id="spawn-overlay">
     <div class="spawn-overlay__inner">
@@ -37,6 +37,6 @@
     </div>
   </div>
 
-  <script src="escalation-map.js"></script>
+  <script src="escalation-map.js?v=2"></script>
 </body>
 </html>
