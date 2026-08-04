@@ -43,9 +43,9 @@ function renderSections(data, map, factions) {
 
   const sectionCount = 1 + data.stages.length;
   const perSectionHeight = wrap.clientHeight / sectionCount;
-  const valueSize = Math.max(28, Math.min(perSectionHeight * 0.4, 150));
-  const labelSize = Math.max(12, Math.min(perSectionHeight * 0.11, 26));
-  const flagSize = Math.max(20, Math.min(perSectionHeight * 0.16, 56));
+  const valueSize = Math.max(22, Math.min(perSectionHeight * 0.4, 150));
+  const labelSize = Math.max(11, Math.min(perSectionHeight * 0.11, 26));
+  const flagSize = Math.max(18, Math.min(perSectionHeight * 0.16, 56));
 
   wrap.querySelectorAll(".bt-section__value").forEach((el) => {
     el.style.fontSize = `${valueSize}px`;
@@ -61,14 +61,23 @@ function renderSections(data, map, factions) {
     el.style.fontSize = `${Math.max(11, labelSize * 0.85)}px`;
   });
 
-  const maxWidth = wrap.clientWidth - 32;
+  const maxWidth = wrap.clientWidth - 48;
   wrap.querySelectorAll(".bt-section__value").forEach((el) => {
     let size = parseFloat(el.style.fontSize);
-    while (el.scrollWidth > maxWidth && size > 14) {
+    while (el.scrollWidth > maxWidth && size > 12) {
       size -= 1;
       el.style.fontSize = `${size}px`;
     }
   });
+
+  const factionsRow = wrap.querySelector(".bt-factions");
+  if (factionsRow) {
+    let gap = parseFloat(getComputedStyle(factionsRow).columnGap) || 48;
+    while (factionsRow.scrollWidth > maxWidth && gap > 8) {
+      gap -= 4;
+      factionsRow.style.gap = `${gap}px`;
+    }
+  }
 }
 
 async function init() {
