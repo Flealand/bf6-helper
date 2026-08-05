@@ -31,5 +31,20 @@
       { "vehicle": "bomber-jet", "time": "18:00" },
       { "vehicle": "tank", "time": "19:30" }
     ]
+  },
+  "mirak-valley": {
+    "duration": "22:00",
+    "events": [
+      { "vehicle": "infantry-destroyer", "time": "03:00" },
+      { "vehicle": "infantry-destroyer", "time": "03:00" },
+      { "vehicle": "little-bird", "time": "04:30" },
+      { "vehicle": "tank", "time": "07:30" },
+      { "vehicle": "tank", "time": "07:30" },
+      { "vehicle": "attack-heli", "time": "09:00" },
+      { "vehicle": "infantry-destroyer", "time": "12:00" },
+      { "vehicle": "jet", "time": "13:30" },
+      { "vehicle": "tank", "time": "15:00" },
+      { "vehicle": "bomber-jet", "time": "18:00" }
+    ]
   }
 }
