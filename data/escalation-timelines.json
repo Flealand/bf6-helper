@@ -46,5 +46,13 @@
       { "vehicle": "tank", "time": "15:00" },
       { "vehicle": "bomber-jet", "time": "18:00" }
     ]
+  },
+  "siege-of-cairo": {
+    "duration": "22:00",
+    "events": [
+      { "vehicle": "infantry-destroyer", "time": "06:00" },
+      { "vehicle": "infantry-destroyer", "time": "12:00" },
+      { "vehicle": "tank", "time": "18:00" }
+    ]
   }
 }
